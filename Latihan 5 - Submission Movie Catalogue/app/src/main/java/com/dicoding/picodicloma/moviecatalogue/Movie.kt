@@ -1,15 +1,20 @@
-package com.dicoding.picodicloma.mylistview
+package com.dicoding.picodicloma.moviecatalogue
 
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Hero(
+data class Movie(
     var photo: Int,
-    var name: String?,
+    var title: String?,
+    var year: String?,
+    var director: String?,
     var description: String?
+
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
+        parcel.readString(),
+        parcel.readString(),
         parcel.readString(),
         parcel.readString()
     ) {
@@ -17,7 +22,9 @@ data class Hero(
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(photo)
-        parcel.writeString(name)
+        parcel.writeString(title)
+        parcel.writeString(year)
+        parcel.writeString(director)
         parcel.writeString(description)
     }
 
@@ -25,13 +32,14 @@ data class Hero(
         return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<Hero> {
-        override fun createFromParcel(parcel: Parcel): Hero {
-            return Hero(parcel)
+    companion object CREATOR : Parcelable.Creator<Movie> {
+        override fun createFromParcel(parcel: Parcel): Movie {
+            return Movie(parcel)
         }
 
-        override fun newArray(size: Int): Array<Hero?> {
+        override fun newArray(size: Int): Array<Movie?> {
             return arrayOfNulls(size)
         }
     }
+
 }

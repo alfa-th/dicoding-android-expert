@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import kotlinx.android.synthetic.main.item_hero.view.*
 
 class HeroAdapter internal constructor(private val context: Context) : BaseAdapter() {
 
@@ -26,15 +27,13 @@ class HeroAdapter internal constructor(private val context: Context) : BaseAdapt
         return itemView
     }
 
-    private inner class ViewHolder internal constructor(view: View) {
-        private val txtName: TextView = view.findViewById(R.id.txt_name)
-        private val txtDescription: TextView = view.findViewById(R.id.txt_description)
-        private val imgPhoto: ImageView = view.findViewById(R.id.img_photo)
-
+    private inner class ViewHolder internal constructor(private val view: View) {
         internal fun bind(hero: Hero) {
-            txtName.text = hero.name
-            txtDescription.text = hero.description
-            imgPhoto.setImageResource(hero.photo)
+            with(view) {
+                txt_name.text = hero.name
+                txt_description.text = hero.description
+                img_photo.setImageResource(hero.photo)
+            }
         }
     }
 

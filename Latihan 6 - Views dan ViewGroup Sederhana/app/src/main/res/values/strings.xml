@@ -13,4 +13,9 @@
     Video playback: up to 13 hours\n
     Audio playback (via headset): up to 110 hours\n
     Fast charging: up to 7 hours of use from only 15 minutes of charging</string>
+    <string name="move_to_scroll_activity">Pindah ke ScrollView</string>
+    <string name="move_to_constraint_activity">Pindah ke ConstraintView</string>
+    <string name="dummy_photos">6 photos</string>
+    <string name="dummy_value">$735</string>
+    <string name="stock">Stock hanya 5 buah</string>
 </resources>

@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         btn_move_to_scroll_activity.setOnClickListener(this)
         btn_move_to_constraint_activity.setOnClickListener(this)
+        btn_move_to_my_button_and_text_activity.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -29,7 +30,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
                 startActivity(moveIntent)
             }
+            R.id.btn_move_to_my_button_and_text_activity -> {
+                val moveIntent = Intent(this@MainActivity, MyButtonAndTextActivity::class.java)
 
+                startActivity(moveIntent)
+            }
         }
     }
 }

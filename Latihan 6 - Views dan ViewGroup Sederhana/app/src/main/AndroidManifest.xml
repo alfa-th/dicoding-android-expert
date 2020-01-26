@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ConstraintActivity"></activity>
+        <activity android:name=".MyButtonAndTextActivity"></activity>
+        <activity android:name=".ConstraintActivity" />
         <activity android:name=".ScrollActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

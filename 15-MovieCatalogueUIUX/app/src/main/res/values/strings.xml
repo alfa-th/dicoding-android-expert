@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">MovieCatalogue</string>
+
+    <string name="tab_text_1">Movies</string>
+    <string name="tab_text_2">TV Shows</string>
+    <string name="hello_movie_fragment">Hello watchable fragment</string>
+    <string name="hello_tv_show_fragment">Hello tvshow fragment</string>
+    <string name="watchable_title">Placeholder Movie Title</string>
+    <string name="watchable_year">Placeholder Movie Year</string>
+    <string name="watchable_director">Placeholder Movie Director</string>
+    <string name="activity_watchable_description">Description</string>
+    <string name="img_cd_prestring">Image of</string>
+    <string name="placeholder_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="img_photo_desc">Movie/TV Show Image</string>
+    <string name="change_language_settings">Change Language in Settings</string>
+
+    <array name="movie_photo">
+        <item>@drawable/movie_shawshank</item>
+        <item>@drawable/movie_godfather_1</item>
+        <item>@drawable/movie_godfather_2</item>
+        <item>@drawable/movie_dark_knight</item>
+        <item>@drawable/movie_twelve_angrymen</item>
+        <item>@drawable/movie_schindlers_list</item>
+        <item>@drawable/movie_lotr_rotk</item>
+        <item>@drawable/movie_pulp_fiction</item>
+        <item>@drawable/movie_the_gbu</item>
+        <item>@drawable/movie_fight_club</item>
+    </array>
+
+    <string-array name="movie_title">
+        <item>The Shawshank Redemption</item>
+        <item>The Godfather</item>
+        <item>The Godfather\: Part II</item>
+        <item>The Dark Knight</item>
+        <item>12 Angry Men</item>
+        <item>Schindler\'s List</item>
+        <item>The Lord of the Rings\: The Return of the King</item>
+        <item>Pulp Fiction</item>
+        <item>The Good, the Bad and the Ugly</item>
+        <item>Fight Club</item>
+    </string-array>
+
+    <string-array name="movie_year">
+        <item>1994</item>
+        <item>1972</item>
+        <item>1974</item>
+        <item>2008</item>
+        <item>1957</item>
+        <item>1993</item>
+        <item>2003</item>
+        <item>1994</item>
+        <item>1966</item>
+        <item>1999</item>
+    </string-array>
+
+    <string-array name="movie_director">
+        <item>Frank Darabont</item>
+        <item>Francis Ford Coppola</item>
+        <item>Francis Ford Coppola</item>
+        <item>Christopher Nolan</item>
+        <item>Sidney Lumet</item>
+        <item>Steven Spielberg</item>
+        <item>Peter Jackson</item>
+        <item>Quentin Tarantino</item>
+        <item>Sergio Leone</item>
+        <item>David Fincher </item>
+    </string-array>
+
+    <string-array name="movie_description">
+        <item>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</item>
+        <item>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</item>
+        <item>The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.</item>
+        <item>When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</item>
+        <item>A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.</item>
+        <item>In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.</item>
+        <item>Gandalf and Aragorn lead the World of Men against Sauron\'s army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</item>
+        <item>The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</item>
+        <item>A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.</item>
+        <item>An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.</item>
+    </string-array>
+
+    <array name="tv_photo">
+        <item>@drawable/tv_planet_earth_2</item>
+        <item>@drawable/tv_planet_earth_1</item>
+        <item>@drawable/tv_band_of_brother</item>
+        <item>@drawable/tv_breaking_bad</item>
+        <item>@drawable/tv_chernobyl</item>
+        <item>@drawable/tv_blue_planet_2</item>
+        <item>@drawable/tv_the_wire</item>
+        <item>@drawable/tv_got</item>
+        <item>@drawable/tv_our_planet</item>
+        <item>@drawable/tv_cosmos</item>
+    </array>
+
+    <string-array name="tv_title">
+        <item>Planet Earth II</item>
+        <item>Planet Earth</item>
+        <item>Band of Brothers</item>
+        <item>Breaking Bad</item>
+        <item>Chernobyl</item>
+        <item>Blue Planet II</item>
+        <item>The Wire</item>
+        <item>Game of Thrones</item>
+        <item>Our Planet</item>
+        <item>Cosmos</item>
+    </string-array>
+
+    <string-array name="tv_year">
+        <item>2016</item>
+        <item>2006</item>
+        <item>2001</item>
+        <item>2008</item>
+        <item>2019</item>
+        <item>2017</item>
+        <item>2002</item>
+        <item>2011</item>
+        <item>2019</item>
+        <item>2014</item>
+    </string-array>
+
+    <string-array name="tv_director">
+        <item>David Attenborough</item>
+        <item>David Attenborough</item>
+        <item>Scott Grimes</item>
+        <item>Vince Gilligan</item>
+        <item>Craig Mazin</item>
+        <item>David Attenborough</item>
+        <item>David Simon</item>
+        <item>David Benioff\, D.B. Weiss</item>
+        <item>David Attenborough</item>
+        <item>Neil deGrasse Tyson</item>
+    </string-array>
+
+    <string-array name="tv_description">
+        <item>David Attenborough returns in this breathtaking documentary showcasing life on Planet Earth. </item>
+        <item>Emmy Award-winning, 11 episodes, five years in the making, the most expensive nature documentary series ever commissioned by the BBC, and the first to be filmed in high definition. </item>
+        <item>The story of Easy Company of the U.S. Army 101st Airborne Division, and their mission in World War II Europe, from Operation Overlord, through V-J Day. </item>
+        <item>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family\'s future. </item>
+        <item>In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world\'s worst man-made catastrophes. </item>
+        <item>David Attenborough returns to the world\'s oceans in this sequel to the acclaimed documentary filming rare and unusual creatures of the deep, as well as documenting the problems our oceans face. </item>
+        <item>The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement. </item>
+        <item>Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years. </item>
+        <item>Documentary series focusing on the breadth of the diversity of habitats around the world, from the remote Arctic wilderness and mysterious deep oceans to the vast landscapes of Africa and diverse jungles of South America. </item>
+        <item>An exploration of our discovery of the laws of nature and coordinates in space and time. </item>
+    </string-array>
+
+
+</resources>

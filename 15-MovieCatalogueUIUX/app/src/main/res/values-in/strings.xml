@@ -4,8 +4,6 @@
 
     <string name="tab_text_1">Film</string>
     <string name="tab_text_2">Acara TV</string>
-    <string name="hello_movie_fragment">Halo film fragment</string>
-    <string name="hello_tv_show_fragment">Halo acaratv fragment</string>
     <string name="watchable_title">Placeholder Judul Film</string>
     <string name="watchable_year">Placeholder Tahun Film</string>
     <string name="watchable_director">Placeholder Direktur Film</string>
@@ -144,6 +142,7 @@
         <item>Seri film dokumenter yang berfokus pada luasnya keanekaragaman habitat di seluruh dunia, mulai dari hutan belantara Arktik yang terpencil dan samudra dalam yang misterius hingga lanskap luas Afrika dan beragam hutan di Amerika Selatan.</item>
         <item>Eksplorasi penemuan kami tentang hukum alam dan koordinat dalam ruang dan waktu.</item>
     </string-array>
+    <string name="you_have_chosen">Anda telah memilih</string>
 
 
 </resources>

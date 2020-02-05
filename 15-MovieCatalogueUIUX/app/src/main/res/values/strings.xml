@@ -3,8 +3,6 @@
 
     <string name="tab_text_1">Movies</string>
     <string name="tab_text_2">TV Shows</string>
-    <string name="hello_movie_fragment">Hello watchable fragment</string>
-    <string name="hello_tv_show_fragment">Hello tvshow fragment</string>
     <string name="watchable_title">Placeholder Movie Title</string>
     <string name="watchable_year">Placeholder Movie Year</string>
     <string name="watchable_director">Placeholder Movie Director</string>
@@ -13,6 +11,7 @@
     <string name="placeholder_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="img_photo_desc">Movie/TV Show Image</string>
     <string name="change_language_settings">Change Language in Settings</string>
+    <string name="you_have_chosen">You have chosen</string>
 
     <array name="movie_photo">
         <item>@drawable/movie_shawshank</item>

@@ -130,7 +130,7 @@ class WatchableFragment() : Fragment() {
             override fun onItemClicked(data: Watchable) {
                 Toast.makeText(
                     this@WatchableFragment.context,
-                    "Kamu memilih ${data.title}",
+                    "${getString(R.string.you_have_chosen)} ${data.title}",
                     Toast.LENGTH_SHORT
                 ).show()
 

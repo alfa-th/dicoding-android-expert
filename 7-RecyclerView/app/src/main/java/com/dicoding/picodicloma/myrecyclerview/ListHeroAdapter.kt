@@ -18,7 +18,8 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>) :
 
         fun bind(hero: Hero) {
             with(itemView) {
-                Glide.with(itemView.context).load(hero.photo)
+                Glide.with(itemView.context)
+                    .load(hero.photo)
                     .apply(RequestOptions().override(55, 55))
                     .into(img_item_photo)
 

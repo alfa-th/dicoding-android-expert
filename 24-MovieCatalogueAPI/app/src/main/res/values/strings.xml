@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">MovieCatalogue</string>
+
+    <string name="tab_text_1">Movies</string>
+    <string name="tab_text_2">TV Shows</string>
+    <string name="watchable_title" translatable="false">Placeholder Watchable Title</string>
+    <string name="watchable_year" translatable="false">Placeholder Watchable Year</string>
+    <string name="watchable_director" translatable="false">Placeholder Watchable Director</string>
+    <string name="activity_watchable_description">Description</string>
+    <string name="img_cd_prestring">Image of</string>
+    <string name="placeholder_description" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="img_photo_desc">Image of the Movie/TV Show</string>
+    <string name="change_language_settings">Change Language in Settings</string>
+    <string name="you_have_chosen">You have chosen</string>
+    <string name="watchable_popularity" translatable="false">Placeholder Watchable Popularity</string>
+    <string name="watchable_release" translatable="false">Placeholder Watchable Release</string>
+    <string name="pretext_release">Release Date :</string>
+    <string name="pretext_popularity">Popularity in The Movie DB :</string>
+    <string name="pretext_overview">Overview :</string>
+    <string name="language_code">en</string>
+    <string name="overview_not_available">Sorry, overview is not yet available</string>
+
+</resources>

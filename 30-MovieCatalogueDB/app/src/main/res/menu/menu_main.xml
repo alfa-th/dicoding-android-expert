@@ -15,5 +15,12 @@
         android:icon="@drawable/ic_home_white_24dp"
         android:title="@string/home"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="TEST"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom" />
+
 
 </menu>

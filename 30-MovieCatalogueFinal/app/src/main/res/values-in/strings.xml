@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MovieCatalogue</string>
+    <string name="activity_watchable_description">Deskripsi</string>
+    <string name="change_language_settings">Ubah Bahasa di Setingan</string>
+    <string name="img_cd_prestring">Gambar dari</string>
+    <string name="img_photo_desc">Gambar dari Film/Acara TV</string>
+    <string name="pretext_overview">Gambaran umum</string>
+    <string name="pretext_popularity">"Popularitas pada The Movie DB : "</string>
+    <string name="pretext_release">Tanggal Rilis :</string>
+    <string name="tab_text_1">Film</string>
+    <string name="tab_text_2">Acara TV</string>
+    <string name="you_have_chosen">Anda Telah Memilih</string>
+    <string name="language_code">id</string>
+    <string name="overview_not_available">Maaf, overview masih belum ada</string>
+    <string name="title_dashboard">Favorit</string>
+    <string name="title_home">Rumah</string>
+    <string name="favorite">Favorit</string>
+    <string name="hello_blank_fragment">Halo fragment blank</string>
+    <string name="home">Beranda</string>
+    <string name="title_bar_favorite">Katalog Favorit</string>
+    <string name="title_bar_normal">Katalog</string>
+</resources>

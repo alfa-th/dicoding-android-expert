@@ -148,7 +148,7 @@ class AlarmReceiver : BroadcastReceiver() {
             df.parse(date)
 
             false
-        } catch (e: ParseException) {
+        } catch (e: Exception) {
             true
         }
     }

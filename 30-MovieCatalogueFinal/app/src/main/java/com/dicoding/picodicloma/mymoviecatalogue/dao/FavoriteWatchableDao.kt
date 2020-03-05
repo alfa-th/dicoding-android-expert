@@ -29,12 +29,15 @@ interface FavoriteWatchableDao {
     fun selectByTitle(title: String): Cursor
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(watchable: Watchable): String
+    fun insertForResult(watchable: Watchable): Long
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insert(watchable: Watchable)
 
     @Delete
     suspend fun deleteByObject(watchable: Watchable)
 
-    @Delete
+    @Query("DELETE FROM ${Watchable.TABLE_NAME} WHERE ${Watchable.COLUMN_TITLE}= :title")
     fun deleteByTitle(title: String): Int
 
     @Query("DELETE FROM fav_watchable_table")

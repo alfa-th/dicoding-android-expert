@@ -6,13 +6,10 @@ import android.util.Log
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.RequestFuture
 import com.android.volley.toolbox.Volley
 import com.dicoding.picodicloma.mymoviecatalogue.AlarmReceiver
 import com.dicoding.picodicloma.mymoviecatalogue.R
 import com.dicoding.picodicloma.mymoviecatalogue.model.Watchable
-import com.dicoding.picodicloma.mymoviecatalogue.viewmodel.WatchableViewModel
-import org.json.JSONObject
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -30,10 +27,9 @@ class ReleaseTodayWatchableRepository(context: Context) {
     var watchableList = ArrayList<Watchable>()
 
     init {
-        var requestFuture = RequestFuture.newFuture<JSONObject>()
-
+        
         val queue = Volley.newRequestQueue(context)
-        val locale = context.getString(R.string.language_code)
+
         val overviewPlaceholder =
             context.getString(R.string.overview_not_available)
 

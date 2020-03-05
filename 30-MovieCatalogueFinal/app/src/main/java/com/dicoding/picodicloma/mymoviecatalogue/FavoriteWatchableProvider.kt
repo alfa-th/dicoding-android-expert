@@ -6,6 +6,7 @@ import android.content.ContentValues
 import android.content.UriMatcher
 import android.database.Cursor
 import android.net.Uri
+import android.util.Log
 import com.dicoding.picodicloma.mymoviecatalogue.dao.FavoriteWatchableDao
 import com.dicoding.picodicloma.mymoviecatalogue.model.Watchable
 import com.dicoding.picodicloma.mymoviecatalogue.room.FavoriteWatchableRoomDatabase
@@ -14,7 +15,8 @@ import com.dicoding.picodicloma.mymoviecatalogue.room.FavoriteWatchableRoomDatab
 class FavoriteWatchableProvider : ContentProvider() {
 
     companion object {
-        private const val AUTHORITY = "com.example.android.mymoviecatalogue.provider"
+        private val TAG = FavoriteWatchableProvider::class.java.simpleName
+        private const val AUTHORITY = "com.dicoding.picodicloma.mymoviecatalogue"
 
         private val URI_WATCHABLE = Uri.parse(
             "content://" + AUTHORITY + "/" + Watchable.TABLE_NAME
@@ -27,11 +29,11 @@ class FavoriteWatchableProvider : ContentProvider() {
     }
 
     init {
-        // content://com.dicoding.picodicloma.mymoviecatalogue/favorites
+        // content://com.dicoding.picodicloma.mymoviecatalogue/fav_watchable_table
         MATCHER.addURI(AUTHORITY, Watchable.TABLE_NAME, CODE_WATCHABLE_DIR)
 
         // content://com.dicoding.picodicloma.mymoviecatalogue/favorites/string
-        MATCHER.addURI(AUTHORITY, Watchable.TABLE_NAME + "/", CODE_WATCHABLE_ITEM)
+        MATCHER.addURI(AUTHORITY, Watchable.TABLE_NAME + "/*", CODE_WATCHABLE_ITEM)
     }
 
     override fun onCreate(): Boolean {
@@ -74,15 +76,15 @@ class FavoriteWatchableProvider : ContentProvider() {
         return when (MATCHER.match(uri)) {
             CODE_WATCHABLE_DIR -> {
                 val context = context ?: return null
-                val title: String =
+                val newObjectId: Long =
                     FavoriteWatchableRoomDatabase
                         .getDatabase(context, null)
                         .favoriteWatchableDao()
-                        .insert(Watchable.fromContentValues(values))
+                        .insertForResult(Watchable.fromContentValues(values))
 
                 context.contentResolver.notifyChange(uri, null)
 
-                ContentUris.withAppendedId(uri, title.toLong())
+                ContentUris.withAppendedId(uri, newObjectId)
             }
             CODE_WATCHABLE_ITEM -> throw IllegalArgumentException("Invalid URI, cannot insert with title: $uri")
             else -> throw IllegalArgumentException("Unknown URI: $uri")

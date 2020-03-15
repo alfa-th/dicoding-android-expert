@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MovieCatalogue</string>
+    <string name="app_name">Katalog Film dan Acara Televisi</string>
     <string name="activity_watchable_description">Deskripsi</string>
     <string name="change_language_settings">Ubah Bahasa di Setingan</string>
     <string name="img_cd_prestring">Gambar dari</string>
@@ -20,4 +20,34 @@
     <string name="home">Beranda</string>
     <string name="title_bar_favorite">Katalog Favorit</string>
     <string name="title_bar_normal">Katalog</string>
+    <string name="search_hint">Cari</string>
+    <string name="appwidget_text">Film/Acara Televisi Favorit</string>
+    <string name="add_widget">Tambahkan Widget</string>
+    <string name="empty_text">Tidak ada data</string>
+    <string name="title_activity_settings">Setingan</string>
+    <string name="messages_header">Pesan</string>
+    <string name="search">Cari</string>
+    <string name="sync_header">Sinkronisasikan</string>
+    <string name="signature_title">Tanda kenal anda</string>
+    <string name="reply_title">Aksi balas standar</string>
+    <string name="sync_title">Sinkronisasikan email secara periodik</string>
+    <string name="attachment_title">Download semua lampiran</string>
+    <string name="attachment_summary_on">Secara otomatis mengunduh lampiran untuk email yang masuk</string>
+    <string name="attachment_summary_off">"Hanya unduh lampiran saat diminta secara manual "</string>
+    <string name="notification">Seting Notifikasi</string>
+    <string name="content_title">Judul</string>
+    <string name="content_text">Teks</string>
+    <string name="subtext">Subbagian dari teks</string>
+    <string name="daily_reminder_message">Kami merindukan mu</string>
+    <string name="release_reminder_message">telah dirilis</string>
+    <string name="alarm_turned_on">Pengingat dinyalakan</string>
+    <string name="search_film">Cari film</string>
+    <string name="search_tv">Cari acara televisi</string>
+    <string name="search_both">Cari film/acara televisi</string>
+    <string name="repeating_cancel">Pengingat telah dimatikan</string>
+    <string name="touched">"Anda telah menyentuh "</string>
+    <string name="daily_summary">Aplikasi mengingatkan anda untuk mengunjungi aplikasi setiap hari</string>
+    <string name="daily_title">Pengingat Harian</string>
+    <string name="release_summary">Aplikasi memberitahu anda film-film yang rilis hari ini</string>
+    <string name="release_title">Rilis Harian</string>
 </resources>

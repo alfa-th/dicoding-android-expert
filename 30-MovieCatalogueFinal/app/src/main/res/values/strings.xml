@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">asdasdasdasdasda</string>
+    <string name="app_name">MyMovieCatalogue</string>
 
     <string name="tab_text_1">Movies</string>
     <string name="tab_text_2">TV Shows</string>
@@ -51,15 +51,26 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="notification">Set Notification</string>
-    <string name="content_title">Title123</string>
-    <string name="content_text">Text123</string>
-    <string name="subtext">Subtext123</string>
-    <string name="key_daily">daily_reminder</string>
-    <string name="key_releases">today_reminder</string>
+    <string name="content_title">Title</string>
+    <string name="content_text">Text</string>
+    <string name="subtext">Subtext</string>
+    <string name="key_daily" translatable="false">daily_reminder</string>
+    <string name="key_releases" translatable="false">today_reminder</string>
 
     <string name="daily_reminder_message">We miss you!</string>
-    <string name="release_reminder_message">Has been released</string>
+    <string name="release_reminder_message">has been released</string>
     <string name="alarm_turned_on">Reminder has been turned on</string>
+
+    <string name="search_tv">Search for tv shows</string>
+    <string name="search_film">Search for film</string>
+    <string name="search_both">Search for film/tv shows</string>
+    <string name="repeating_cancel">Reminder has been cancelled</string>
+    <string name="touched">"You have touched "</string>
+    <string name="daily_summary">App reminds you to visit this app daily</string>
+    <string name="daily_title">Daily Reminder</string>
+    <string name="release_summary">App reminds you daily movie releases</string>
+    <string name="release_title">Daily Releases</string>
+    <string name="film_tv_shows">Film/Tv Shows</string>
 
 
 </resources>

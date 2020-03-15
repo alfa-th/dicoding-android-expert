@@ -42,15 +42,14 @@ class ReleaseTodayWatchableRepository(context: Context) {
             Request.Method.GET,
             url,
             null,
-            Response.Listener
-            { response ->
+            Response.Listener { response ->
                 val responseWatchableJSON = response.getJSONArray("results")
 
                 for (i in 0 until responseWatchableJSON.length()) {
                     val responseWatchable = responseWatchableJSON.getJSONObject(i)
                     val watchable =
                         Watchable(
-                            poster = "https://image.tmdb.org/t/p/$POSTER_SIZE${responseWatchable.getString(
+                            poster = "https://image.tmdb.org/t/p/$POSTER_SIZE/${responseWatchable.getString(
                                 "poster_path"
                             )}",
                             title = responseWatchable.getString("original_title"),
@@ -66,10 +65,10 @@ class ReleaseTodayWatchableRepository(context: Context) {
                     watchableList.add(watchable)
                 }
 
+
                 AlarmReceiver.onReceiveReleaseToday(context, watchableList)
             },
-            Response.ErrorListener
-            { error ->
+            Response.ErrorListener { error ->
                 Log.e(TAG, "$error")
             })
 

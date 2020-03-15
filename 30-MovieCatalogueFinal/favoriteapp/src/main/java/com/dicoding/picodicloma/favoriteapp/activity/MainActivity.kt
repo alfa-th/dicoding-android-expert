@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportActionBar?.title = "Favorite"
+        supportActionBar?.title = getString(R.string.app_name)
 
         rv_watchables.layoutManager = LinearLayoutManager(this)
         rv_watchables.setHasFixedSize(true)
@@ -69,7 +69,10 @@ class MainActivity : AppCompatActivity() {
         GlobalScope.launch(Dispatchers.Main) {
             progress_circular.visibility = View.VISIBLE
             val deferredWatchables = async(Dispatchers.IO) {
-                val cursor = contentResolver?.query(Watchable.URI_WATCHABLE, null, null, null, null)
+                val cursor = contentResolver?.query(
+                    Watchable.URI_WATCHABLE,
+                    null, null, null, null
+                )
                 MappingHelper.mapCursorToArrayList(cursor!!)
             }
             val watchables = deferredWatchables.await()
@@ -78,7 +81,7 @@ class MainActivity : AppCompatActivity() {
                 adapter.listWatchables = watchables
             } else {
                 adapter.listWatchables = ArrayList()
-                showSnackbarMessage("Tidak ada data saat ini")
+                showSnackbarMessage(getString(R.string.not_yet_available))
             }
         }
     }

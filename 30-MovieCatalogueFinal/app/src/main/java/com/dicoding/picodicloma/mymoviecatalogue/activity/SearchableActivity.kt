@@ -7,6 +7,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.SearchView
 import android.widget.Toast
@@ -113,7 +114,8 @@ class SearchableActivity : AppCompatActivity() {
         searchView.apply {
             setSearchableInfo(searchManager.getSearchableInfo(componentName))
             isSubmitButtonEnabled = true
-            queryHint = "AAAA"
+            queryHint =
+                if (queryType == TYPE_MOVIE) getString(R.string.search_film) else getString(R.string.search_tv)
             isIconifiedByDefault = false
             maxWidth = Integer.MAX_VALUE
             setQuery(currentQuery, false)
@@ -220,6 +222,12 @@ class SearchableActivity : AppCompatActivity() {
                     }
                 }
             })
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        Log.d(TAG, "onOptionsItemSelected: ${item.title}")
+
+        return super.onOptionsItemSelected(item)
     }
 
 

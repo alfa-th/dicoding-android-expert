@@ -92,7 +92,7 @@ class SettingsFragment : PreferenceFragmentCompat(),
 
                     context?.run {
                         if (isReleasesReminderActivatedPreference.isChecked) {
-                            alarmReceiver.setRepeatingAlarm(this, AlarmReceiver.TYPE_RELEASE, getCurrentTime())
+                            alarmReceiver.setRepeatingAlarm(this, AlarmReceiver.TYPE_RELEASE, "08:00")
                         } else {
                             alarmReceiver.cancelAlarm(this, AlarmReceiver.TYPE_RELEASE)
                         }

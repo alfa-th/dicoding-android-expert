@@ -18,7 +18,7 @@ class FavoriteWatchableProvider : ContentProvider() {
         private val TAG = FavoriteWatchableProvider::class.java.simpleName
         private const val AUTHORITY = "com.dicoding.picodicloma.mymoviecatalogue"
 
-        private val URI_WATCHABLE = Uri.parse(
+        val URI_WATCHABLE = Uri.parse(
             "content://" + AUTHORITY + "/" + Watchable.TABLE_NAME
         )
 

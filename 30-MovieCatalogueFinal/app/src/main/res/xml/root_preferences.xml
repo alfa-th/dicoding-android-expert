@@ -1,12 +1,12 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
     <SwitchPreferenceCompat
         app:key="@string/key_daily"
-        app:summary="App reminds you to visit this app daily"
-        app:title="Daily Reminder" />
+        app:summary="@string/daily_summary"
+        app:title="@string/daily_title" />
 
     <SwitchPreferenceCompat
         app:key="@string/key_releases"
-        app:summary="App reminds you daily movie releases"
-        app:title="Daily Releases" />
+        app:summary="@string/release_summary"
+        app:title="@string/release_title" />
 
 </PreferenceScreen>

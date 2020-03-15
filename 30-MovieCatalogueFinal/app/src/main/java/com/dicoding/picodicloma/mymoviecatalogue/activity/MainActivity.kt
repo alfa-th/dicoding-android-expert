@@ -5,11 +5,13 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.viewpager.widget.ViewPager
 import com.dicoding.picodicloma.mymoviecatalogue.R
 import com.dicoding.picodicloma.mymoviecatalogue.adapter.WatchableFragmentPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             )
 
         view_pager.adapter = fragmentPagerAdapter
+
         tabs.setupWithViewPager(view_pager)
 
         supportActionBar?.title = getString(R.string.title_bar_normal)
@@ -53,7 +56,26 @@ class MainActivity : AppCompatActivity() {
         (menu?.findItem(R.id.action_search)?.actionView as SearchView).apply {
             setSearchableInfo(searchManager.getSearchableInfo(componentName))
             isSubmitButtonEnabled = true
-            queryHint = "AAAA"
+            queryHint = getString(R.string.search_film)
+            view_pager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+                override fun onPageScrollStateChanged(state: Int) {
+                }
+
+                override fun onPageScrolled(
+                    position: Int,
+                    positionOffset: Float,
+                    positionOffsetPixels: Int
+                ) {
+                }
+
+                override fun onPageSelected(position: Int) {
+                    queryHint = when(position){
+                        0 -> context.getString(R.string.search_film)
+                        else -> context.getString(R.string.search_tv)
+                    }
+                }
+
+            })
             setOnQueryTextListener(object : SearchView.OnQueryTextListener {
                 override fun onQueryTextChange(newText: String?): Boolean {
                     return true

@@ -15,6 +15,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.dicoding.picodicloma.mymoviecatalogue.FavoriteWatchableProvider
 import com.dicoding.picodicloma.mymoviecatalogue.R
 import com.dicoding.picodicloma.mymoviecatalogue.activity.WatchableActivity
 import com.dicoding.picodicloma.mymoviecatalogue.adapter.WatchableAdapter
@@ -110,6 +111,7 @@ class WatchableFragment : Fragment() {
 
                             context?.run {
                                 FavoriteWatchableBannerWidget.notifyWidgetDataChanged(this)
+                                contentResolver.notifyChange(FavoriteWatchableProvider.URI_WATCHABLE, null);
                             }
                         }
                 }

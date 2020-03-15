@@ -96,7 +96,8 @@ class FavoriteWatchableBannerWidget : AppWidgetProvider() {
                 val viewIndex = intent?.getIntExtra(EXTRA_ITEM, 0)
                 Toast.makeText(
                     context,
-                    "Touched view $viewIndex",
+                    //"You have touched movie $viewIndex"
+                    "${context?.getString(R.string.touched)} $viewIndex",
                     Toast.LENGTH_SHORT
                 ).show()
             }

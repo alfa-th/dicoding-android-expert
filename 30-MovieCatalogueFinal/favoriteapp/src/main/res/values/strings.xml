@@ -60,5 +60,6 @@
     <string name="release_reminder_message">Has been released</string>
     <string name="alarm_turned_on">Reminder has been turned on</string>
 
+    <string name="not_yet_available">Tidak ada data saat ini</string>
 
 </resources>

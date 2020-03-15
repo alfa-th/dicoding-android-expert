@@ -135,15 +135,9 @@ class AlarmReceiver : BroadcastReceiver() {
             pendingIntent
         )
 
-        val localeType =
-            if (type == TYPE_DAILY) context.getString(R.string.daily_reminder_message) else context.getString(
-                R.string.release_reminder_message
-            )
-
-
         Toast.makeText(
             context,
-            "${context.getString(R.string.alarm_turned_on)} $localeType",
+            "${context.getString(R.string.alarm_turned_on)}",
             Toast.LENGTH_SHORT
         )
             .show()
@@ -161,7 +155,7 @@ class AlarmReceiver : BroadcastReceiver() {
 
         Toast.makeText(
             context,
-            "Repeating alarm has been cancelled",
+            context.getString(R.string.repeating_cancel),
             Toast.LENGTH_SHORT
         )
             .show()
